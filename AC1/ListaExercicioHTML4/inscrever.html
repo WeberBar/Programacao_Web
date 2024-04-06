@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <div>
+        <form action="https://65eb9e4543ce164189341669.mockapi.io/matricula-curso/Inscricao" method="post">
+            <h4>Dados do aluno</h4>
+            <p>Nome: <input type="text" id="nome-aluno" name="nome_aluno" required></p>
+            <p>Endereço: <input type="text" id="endereco" name="endereco_aluno"></p>
+            <p>Bairro:<input type="text" id="bairro" name="bairro_aluno"></p>
+            <p>Cidade: <input type="text" name="cidade" id="cidade-aluno"></p>
+            <p>Número: <input type="number" id="numero" name="numero_aluno"></p>
+            <p>CEP: <input type="text" id="cep" name="cep_aluno"></p>
+            <p>Complemento: <textarea type="text" id="complemento" name="complemento_aluno"></textarea></p>
+            <p>Estado: <input type="text" id="estado" name="estado_aluno"></p>
+            <p>Telefone: <input type="tel" id="telefone" name="telefone_aluno" placeholder="(xx) xxxx-xxxx"></p>
+            <p>Celular: <input type="tel" id="celular" name="celular_aluno" required placeholder="(xx) xxxxx-xxxx"></p>
+            <p>Email: <input type="text" name="email_aluno" id="email_aluno" required placeholder="Ex: nome@gmail.com"></p>
+            <p>Cor:
+                <select name="cor" id="cor_aluno">
+                    <option value="branca">Branca</option>
+                    <option value="preta">Preta</option>
+                    <option value="parda">Parda</option>
+                    <option value="amarela">Amarela</option>
+                    <option value="indigena">Indigena</option>
+                </select>
+            </p>
+            <p>Responsável financeiro: 
+                <select name="responsavel_financeiro" id="responsavel">
+                    <option value="mae">Mãe</option>
+                    <option value="pai">Pai</option>
+                </select>
+            </p>
+
+            <h4>Dados do pai</h4>
+            <p>Nome: <input type="text" name="nome_pai" id="nome-pai" required></p>
+            <p>Data de nascimento: <input type="date" name="data_nasci_pai" id="data-nasci-pai"></p>
+            <p>Naturalidade: <input type="text" name="naturalidade_pai" id="naturalidade-pai"></p>
+            <p>Profissão: <input type="text" name="profissao_pai" id="profissao-pai" placeholder="Ex: médico"></p>
+            <p>Celular: <input type="tel" id="celular-pai" name="celular_pai" required placeholder="(xx) xxxxx-xxxx"></p>
+            <p>Email: <input type="text" name="email_pai" id="email-pai" required placeholder="Ex: nome@gmail.com"></p>
+            <p>CPF: <input type="text" name="cpf_pai" id="cpf-pai"required></p>
+
+            <h4>Dados da mãe</h4>
+            <p>Nome: <input type="text" name="nome_mae" id="nome-mae" required></p>
+            <p>Data de nascimento: <input type="date" name="data_nasci_mae" id="data-nasci-mae"></p>
+            <p>Naturalidade: <input type="text" name="naturalidade_mae" id="naturalidade-mae"></p>
+            <p>Profissão: <input type="text" name="profissao_mae" id="profissao-mae" placeholder="Ex: médico"></p>
+            <p>Celular: <input type="tel" id="celular-mae" name="celular_mae" required placeholder="(xx) xxxxx-xxxx"></p>
+            <p>Email: <input type="text" name="email_mae" id="email-mae" required placeholder="Ex: nome@gmail.com"></p>
+            <p>CPF: <input type="text" name="cpf_mae" id="cpf-mae" required></p>
+            </p>
+
+            <h4>Dados do curso</h4>
+            <p>Nome do curso <select name="nome_curso" id="nome-curso">
+                <option value="Matemática e suas Tecnologias">Matemática e suas Tecnologias</option>
+                <option value="Linguagens e suas Tecnologias">Linguagens e suas Tecnologias</option>
+                <option value="Um por todos e todos por um! pela ética e cidadania (UPT)">Um por todos e todos por um! pela ética e cidadania (UPT)</option>
+            </select></p>
+            <p>Data de ingresso <input type="date" name="data_ingresso" id="data-de-ingresso" required></p>
+            <p>Valor: R$500,00 <blockquote> Forma de pagamento: <select name="valor_curso" id="valor-curso">
+                <option value="R$500,00">1x R$500,00</option>
+                <option value="R$250,00">2x R$250,00</option>
+                <option value="R$166,67">3x R$166,66</option>
+                <option value="R$125,00">4x R$125,00</option>
+            </select></blockquote></p>
+            <button type="submit">Enviar inscrição</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
