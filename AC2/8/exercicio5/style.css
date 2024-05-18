@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+
+}
+
+textarea{
+    display: block;
+    width: 750px;
+    height: 650px;
+    
+}
+
